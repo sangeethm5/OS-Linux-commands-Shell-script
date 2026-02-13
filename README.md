@@ -236,77 +236,77 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![Alt text](f.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![Alt text](d.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](s.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](a.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![Alt text](o.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![Alt text](i1.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](i2.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](i3.png)
 
 seq 10 
 ## OUTPUT
 
-
+![Alt text](i4.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![Alt text](i5.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![Alt text](i6.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](i7.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-
+![Alt text](i8.png)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](i9.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](i0.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 
@@ -322,7 +322,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](w1.png)
 
 cat > file22
 ```
@@ -336,13 +336,13 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+![Alt text](w2.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![Alt text](w3.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -359,17 +359,17 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-
+![Alt text](w4.png)
  
-cat urllist.txt | tr -d ' ' | tr -s '.'
+![cat urllist.txt | tr -d ' ' | tr -s '.']
 ## OUTPUT
 
-
+![Alt text](w5.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![Alt text](w6.png)
 
 mkdir backupdir
  
