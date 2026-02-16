@@ -626,8 +626,8 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
-
+## OUTPUT
+![Alt text](w17.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -675,10 +675,10 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
-
+## OUTPUT
+![Alt text](w18.png)
 # looking for a possible value using elif
-cat elifcheck.sh 
+cat > elifcheck.sh 
 ```bash
 \#!/bin/bash
 if [ $USER = Ram ]
@@ -705,7 +705,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
-
+![Alt text](w19.png)
 # testing compound comparisons
 cat> ifcompound.sh 
 ```bash
@@ -720,7 +720,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](w20.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -739,7 +739,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+ ![Alt text](w21.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -831,7 +832,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
-cat forinfile.sh 
+cat > forinfile.sh 
 ```bash
 #!/bin/bash
 # reading values from a file
@@ -852,7 +853,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![Alt text](w22.png)
 
 cat forctype.sh 
 ```bash
@@ -866,7 +867,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![Alt text](w23.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -879,7 +880,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![Alt text](w24.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -897,7 +898,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](w25.png)
  
 cat forbreak.sh 
 ```bash
@@ -914,12 +915,12 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-
+![Alt text](w26.png)
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
-cat forbreak.sh 
+cat > forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -939,8 +940,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
-cat exread.sh 
+ ![Alt text](w27.png)
+cat> exread.sh 
 ```bash
 #!/bin/bash
 # testing the read command
@@ -953,9 +954,9 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![Alt text](w28.png)
 
-
- cat exread1.sh
+ cat> exread1.sh
 ```bash
 #!/bin/bash
 # testing the read command
@@ -965,7 +966,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![Alt text](w29.png)
 
 
 $ ./exread1.sh 
@@ -986,6 +987,7 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![Alt text](w30.png)
  ./funcex.sh 
 
  
@@ -1003,6 +1005,7 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![Alt text](w31.png)
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1020,6 +1023,7 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![Alt text](w32.png)
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1033,6 +1037,7 @@ done
 set +x
 ```
 ## OUTPUT
+![Alt text](w33.png)
  ./argshift.sh 1 2 3
  
  
@@ -1047,8 +1052,8 @@ chrcnt+=len
 END {
 print "total characters",chrcnt 
 print "Number of Lines are",NR
-print "No of Words count:",wordcount
-}
+print "No of Words count:",wordcount}
+
  ```
 cat>data.dat
 ```bash
@@ -1065,7 +1070,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](w34.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1092,7 +1097,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](w35.png)
 
 # RESULT:
 The Commands are executed successfully.
