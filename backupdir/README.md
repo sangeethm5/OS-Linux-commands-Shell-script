@@ -369,7 +369,7 @@ cat urllist.txt | tr -d ' '
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](w6.png)
+
 
 mkdir backupdir
  
@@ -379,11 +379,11 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![Alt text](w7.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![Alt text](w8.png)
+
 gzip backup.tar
 
 ls .gz
@@ -401,7 +401,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![Alt text](w10.png)
+
  
 cat << stop > herecheck.txt
 ```
@@ -413,9 +413,9 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![Alt text](w9.png)
 
-cat < scriptest.sh
+
+cat < scriptest.sh 
 ```bash
 \#!/bin/sh
 echo “File name is $0 ”
@@ -451,27 +451,24 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![Alt text](w11.png)
+
  
 ls file1
 ## OUTPUT
-file1
 
 echo $?
 ## OUTPUT 
-![Alt text](w12.png)
-
 ./one
 bash: ./one: Permission denied
-
+ 
 echo $?
 ## OUTPUT 
- ![Alt text](w13.png)
+ 
 abcd
  
 echo $?
  ## OUTPUT
-![Alt text](w12.png)
+
 
  
 # mis-using string comparisons
@@ -510,10 +507,10 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![Alt text](w14.png)
+
 
 # check file ownership
-cat > psswdperm.sh 
+cat < psswdperm.sh 
 ```bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
@@ -537,7 +534,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Alt text](w15.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -584,7 +581,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-![Alt text](w16.png)
+
 
 # using numeric test comparisons
 cat > iftest.sh 
